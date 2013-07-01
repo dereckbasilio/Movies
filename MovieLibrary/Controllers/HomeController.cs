@@ -24,7 +24,10 @@ namespace MovieLibrary.Controllers
         {
             return View(db.Movies.ToList());
         }
-
+        public ActionResult About()
+        {
+            return View();
+        }
         [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Create(Movie movieToCreate)
         {
