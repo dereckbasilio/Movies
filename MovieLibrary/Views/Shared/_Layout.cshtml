@@ -11,10 +11,10 @@
     <body>
         <header>
             <div class="content-wrapper">
+                <img id="img_logo" alt="Logo" height="100" width="200" src="@Url.Content("~/Images/film_clap_reel.png")" />
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                    <p class="site-title">@Html.ActionLink("Movies List", "Index", "Home")</p>
                 </div>
-                <img id="img_logo" alt="Logo" src="@Url.Content("~/Images/film_clap_reel.png")" />
                 <div class="float-right">
                     <section id="login">
                         @Html.Partial("_LoginPartial")
