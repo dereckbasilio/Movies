@@ -37,6 +37,13 @@
             @Html.EditorFor(model => model.DateReleased)
             @Html.ValidationMessageFor(model => model.DateReleased)
         </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Genre)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Genre)
+            @Html.ValidationMessageFor(model => model.Genre)
+        </div>
 
         <p>
             <input type="submit" value="Save" />
