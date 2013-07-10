@@ -19,7 +19,7 @@ namespace MovieLibrary.Models
     public class Movie
     {
         public int id { get; set; }
-        [Required]
+        //[Required]
         public string Title { get; set; }
         public string Director { get; set; }
         public DateTime DateReleased { get; set; }
