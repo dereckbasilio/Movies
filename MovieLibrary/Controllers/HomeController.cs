@@ -22,6 +22,7 @@ namespace MovieLibrary.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.Message = "Hello";
             return View(db.Movies.ToList());
         }
         public ActionResult About()
