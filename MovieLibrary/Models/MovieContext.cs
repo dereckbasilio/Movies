@@ -24,6 +24,7 @@ namespace MovieLibrary.Models
         public string Director { get; set; }
         public DateTime DateReleased { get; set; }
         public string Genre { get; set; }
+        public string ImageUrl { get; set;}
     }
 
     public enum Genre
