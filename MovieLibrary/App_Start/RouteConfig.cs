@@ -15,7 +15,7 @@ namespace MovieLibrary
 
             routes.MapRoute("Dogs",
                 "Dogs/{name}",
-                new { controller = "Dogs", action = "Search", name="" }
+                new { controller = "Dogs", action = "Search", name=UrlParameter.Optional }
             );
 
             routes.MapRoute(
