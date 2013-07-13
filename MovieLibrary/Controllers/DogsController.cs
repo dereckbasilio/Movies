@@ -11,9 +11,10 @@ namespace MovieLibrary.Controllers
         //
         // GET: /Dogs/
 
-        public ActionResult Search()
+        public ActionResult Search(string name)
         {
-            return Content("Hello!");
+            var message = Server.HtmlEncode(name);
+            return Content(message);
         }
 
     }
