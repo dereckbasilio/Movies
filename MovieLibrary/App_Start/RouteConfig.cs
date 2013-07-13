@@ -13,6 +13,11 @@ namespace MovieLibrary
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Dogs",
+                "Dogs/{name}",
+                new { controller = "Dogs", action = "Search", name="" }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
